@@ -1,0 +1,19 @@
+# data and outputs that should not be committed
+data/
+*.csv
+*.7z
+*.mp4
+*.wav
+*.m4a
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# editors and OS
+.DS_Store
+.vscode/
+.idea/
