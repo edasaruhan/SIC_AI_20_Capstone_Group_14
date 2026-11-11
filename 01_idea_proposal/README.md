@@ -11,6 +11,6 @@ The first capstone assignment: a one-page proposal with five sections (project i
 | `slides/narration_EN.md`, `slides/narration_TR.md` | The text spoken over the slides. |
 | `analysis/` | The script that produced the numbers and the chart in the proposal, with its results. |
 
-The presentation was recorded as a narrated video. The video files are not kept in this repository because of their size.
+The presentation was recorded as a narrated video. The video files are not kept in this repository.
 
 Every number in the proposal that comes from the data can be reproduced with `analysis/first_look.py`. See `analysis/README.md`.

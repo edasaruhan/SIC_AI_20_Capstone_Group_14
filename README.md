@@ -44,7 +44,7 @@ REFIT Electrical Load Measurements (Cleaned), University of Strathclyde, CC BY 4
 
 Murray, D., Stankovic, L. and Stankovic, V. (2017). An electrical load measurements dataset of United Kingdom households from a two-year longitudinal study. Scientific Data 4, 160122. https://doi.org/10.1038/sdata.2016.122
 
-One limit should be clear from the start. The homes are British and there is no Turkish data to test on, so cost figures in lira will be an illustration.
+The homes are British and there is no Turkish data to test on, so cost figures in lira will be an illustration.
 
 ## Repository layout
 
