@@ -1,0 +1,62 @@
+{
+ "house2": {
+  "rows": 5733526,
+  "minutes_with_data_pct": 75.4,
+  "total_kwh": 5148.5,
+  "monitored_share_pct": 32.1,
+  "appliance_share_pct": {
+   "Dishwasher": 13.1,
+   "Fridge-Freezer": 7.8,
+   "Kettle": 5.0,
+   "Washing Machine": 3.9,
+   "Television": 0.8,
+   "Microwave": 0.7,
+   "Hi-Fi": 0.4,
+   "Toaster": 0.3,
+   "Overhead Fan": 0.1
+  }
+ },
+ "chart_day": {
+  "day": "2014-06-17",
+  "total_kwh": 10.34,
+  "dishwasher_kwh": 2.72,
+  "peak_5min_kw": 10.28
+ },
+ "baselines": {
+  "Fridge-Freezer": {
+   "true_mean_W": 59.7,
+   "mae_mean": 55.6,
+   "mae_gb": 48.0,
+   "sae_mean": 0.4,
+   "sae_gb": 0.35
+  },
+  "Washing Machine": {
+   "true_mean_W": 31.6,
+   "mae_mean": 44.3,
+   "mae_gb": 43.6,
+   "sae_mean": 0.43,
+   "sae_gb": 0.37
+  },
+  "Dishwasher": {
+   "true_mean_W": 58.0,
+   "mae_mean": 107.1,
+   "mae_gb": 67.6,
+   "sae_mean": 0.04,
+   "sae_gb": 0.39
+  },
+  "Microwave": {
+   "true_mean_W": 27.5,
+   "mae_mean": 30.2,
+   "mae_gb": 30.0,
+   "sae_mean": 0.88,
+   "sae_gb": 0.82
+  },
+  "Kettle": {
+   "true_mean_W": 22.4,
+   "mae_mean": 44.9,
+   "mae_gb": 17.6,
+   "sae_mean": 0.03,
+   "sae_gb": 0.02
+  }
+ }
+}
