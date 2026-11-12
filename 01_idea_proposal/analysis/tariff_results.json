@@ -1,0 +1,59 @@
+{
+ "source": "EPDK regulated tariff, low-voltage residential (mesken, AG), valid from 2026-04-04",
+ "tax_note": "all-in = (energy x 1.05 + distribution) x 1.10; our calculation, check against a real bill",
+ "day": "2014-06-17",
+ "price_tl_per_kwh": {
+  "single_low": 3.238,
+  "single_high": 4.857,
+  "day": 4.92,
+  "peak": 6.996,
+  "night": 3.261
+ },
+ "kwh_per_band": {
+  "Household total": {
+   "day": 6.66,
+   "peak": 1.39,
+   "night": 2.3
+  },
+  "Fridge-Freezer": {
+   "day": 0.5,
+   "peak": 0.22,
+   "night": 0.26
+  },
+  "Washing Machine": {
+   "day": 1.15,
+   "peak": 0.0,
+   "night": 0.0
+  },
+  "Dishwasher": {
+   "day": 1.39,
+   "peak": 0.0,
+   "night": 1.33
+  },
+  "Microwave": {
+   "day": 0.0,
+   "peak": 0.05,
+   "night": 0.0
+  },
+  "Kettle": {
+   "day": 0.56,
+   "peak": 0.11,
+   "night": 0.0
+  }
+ },
+ "total_kwh": 10.34,
+ "bill_tl": {
+  "single_rate": 37.28,
+  "three_rate": 49.95,
+  "three_rate_shifted": 45.74,
+  "shift_saving": 4.21
+ },
+ "shifted_kwh": 2.54,
+ "appliance_cost_three_rate_tl": {
+  "Fridge-Freezer": 4.86,
+  "Washing Machine": 5.65,
+  "Dishwasher": 11.18,
+  "Microwave": 0.33,
+  "Kettle": 3.54
+ }
+}

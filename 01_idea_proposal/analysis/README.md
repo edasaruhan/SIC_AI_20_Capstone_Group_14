@@ -72,6 +72,78 @@ For reference, the whole archive has 119,495,879 data rows across the 20 CSV fil
 - All REFIT homes are in the UK (Loughborough area, 2013 to 2015). Appliances, wiring and
   habits differ elsewhere, so the results may not carry over to other countries.
 
+## Tariff cost analysis
+
+`tariff_cost.py` prices the example day with Türkiye's regulated residential tariffs. It
+needs only `chart_day.json`, so it runs without the REFIT download:
+
+```
+python tariff_cost.py --chart-day chart_day.json --out-dir .
+```
+
+It writes `tariff_results.json` and `figures/house2_day_tariff.png`.
+
+The script compares two tariffs from the EPDK table for low-voltage residential customers
+(mesken, AG), valid from 4 April 2026. The single-rate tariff charges a low energy price for
+the first 8 kWh per day on average and a higher price for the rest. The three-rate tariff has
+one price for each time band: day (06:00 to 17:00), peak (17:00 to 22:00) and night (22:00 to
+06:00). Both add a distribution charge of 242.49 kuruş per kWh. We add the 5% consumption
+tax (BTV) on the energy part and then 10% VAT (KDV) on the whole, which gives the all-in price:
+(energy × 1.05 + distribution) × 1.10.
+
+The script splits the day's energy into the three bands, for the household total and for each
+of the five appliances, and works out three bills. The third one moves the dishwasher and
+washing machine energy that falls in the day and peak bands (2.54 kWh) to the night band, as if
+the household had started both machines after 22:00.
+
+![House 2 on 17 June 2014 with the three tariff bands](figures/house2_day_tariff.png)
+
+All-in prices, TL per kWh:
+
+| Tariff | Price |
+|---|---|
+| Single-rate, first 8 kWh per day | 3.238 |
+| Single-rate, above 8 kWh per day | 4.857 |
+| Three-rate, day | 4.920 |
+| Three-rate, peak | 6.996 |
+| Three-rate, night | 3.261 |
+
+House 2 on 17 June 2014, energy in each band (kWh) and cost on the three-rate tariff (TL):
+
+| | Day | Peak | Night | Total kWh | Three-rate cost |
+|---|---|---|---|---|---|
+| Household total | 6.66 | 1.39 | 2.30 | 10.34 | 49.95 |
+| Dishwasher | 1.39 | 0.00 | 1.33 | 2.72 | 11.18 |
+| Washing machine | 1.15 | 0.00 | 0.00 | 1.15 | 5.65 |
+| Fridge-freezer | 0.50 | 0.22 | 0.26 | 0.98 | 4.86 |
+| Kettle | 0.56 | 0.11 | 0.00 | 0.67 | 3.54 |
+| Microwave | 0.00 | 0.05 | 0.00 | 0.05 | 0.33 |
+
+Bills for the whole day:
+
+| Case | Bill (TL) |
+|---|---|
+| Single-rate | 37.28 |
+| Three-rate | 49.95 |
+| Three-rate, dishwasher and washing machine moved to night | 45.74 |
+
+Moving the two machines saves 4.21 TL on the three-rate tariff. On this day the household
+would still pay less on the single-rate tariff. About two thirds of its energy falls in the day
+band, and even the night price (3.261 TL) is slightly above the single-rate low tier (3.238 TL).
+The script applies the 8 kWh limit to this one day; on a real bill it is an average over the
+billing period.
+
+Caveats for this part:
+
+- The prices are the regulated tariff valid from 4 April 2026. EPDK revises the table several
+  times a year, so the constants at the top of `tariff_cost.py` need updating before the
+  numbers are reused.
+- The tax add-on is our calculation from the published tax rates and should be checked against
+  a real Turkish electricity bill.
+- The day comes from a UK home in 2014. It shows the method; Turkish homes use electricity at
+  different hours and with different appliances, so the bills say little about a Turkish
+  household.
+
 ## Dataset licence and citation
 
 The REFIT data is published by the University of Strathclyde under the Creative Commons
