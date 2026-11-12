@@ -90,13 +90,37 @@ The washing machine has a long cycle with several stages. This is where I expect
 
 My target is a lower error than the classical method for at least four of the five appliances.
 
-## 9. Demo, limit and close
+## 9. The bill in Türkiye
+
+I calculate the cost with the Turkish tariff. On the three-rate tariff, one kilowatt hour costs 3.26 lira at night, 4.92 lira in the daytime and 7 lira in the evening peak.
+
+On the single-rate tariff it costs 3.24 lira up to 8 kilowatt hours a day, and 4.86 lira above that.
+
+I priced the same day with both tariffs. It costs 37 lira on the single-rate tariff and 50 lira on the three-rate tariff.
+
+If the midday dishwasher run and the morning wash move to the night, the three-rate bill falls to 46 lira.
+
+So for this home the single-rate tariff is cheaper. The demo will make this comparison for every home and say which tariff and which hours are cheaper.
+
+## 10. From UK data to Türkiye
+
+The data come from the UK. But both countries use 230 volts and 50 hertz, and the five appliances I target are also found in Turkish homes.
+
+In the first step I will also test the model on a second dataset. In the literature the error grows little inside one country and grows more in another country.
+
+In the second step I will add loads that are common in Turkish homes, such as air conditioners, electric water heaters and tea makers, to the training data artificially.
+
+In the third step I will also measure the model on hourly data, because smart meters in Türkiye give hourly data.
+
+In the last step I will measure one Turkish home with smart plugs for a few weeks and report the model's error on real Turkish data.
+
+## 11. Demo, limit and close
 
 At the end of the term there will be a demo that opens in the browser.
 
-You upload one day of meter data, and it shows how many kilowatt hours and how many lira each appliance used.
+You upload one day of meter data, and it shows the use of each appliance, the bill on both tariffs and the appliance that can move to the night.
 
-The project also has a limit. The data come from homes in the UK, so I cannot test it on Turkish homes, and the lira values will only be an example.
+There is one limit. I found no open labelled data from Türkiye, so my own measurement will be a small check.
 
 A family that sees the dishwasher takes a quarter of their electricity can decide to run it less often.
 

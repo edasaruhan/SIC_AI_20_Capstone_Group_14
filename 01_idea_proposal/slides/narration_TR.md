@@ -84,19 +84,43 @@ Kıyaslamak için önce iki basit yöntem denedim. Bir evde eğitip başka bir e
 
 Su ısıtıcıda ortalamayı tahmin etmek 45 watt yanılıyor. Klasik makine öğrenmesi bunu 18 watta indiriyor.
 
-Çamaşır makinesinde ise klasik yöntem neredeyse hiç iyileştirmiyor, hata 44 wattta kalıyor.
+Çamaşır makinesinde ise klasik yöntem neredeyse hiç iyileştirmiyor, hata 44 watt'ta kalıyor.
 
 Derin öğrenmenin fark yaratmasını beklediğim yer burası.
 
 Hedefim, beş cihazın en az dördünde klasik yöntemden daha düşük hata almak.
 
-## 9. Demo, sınırlar ve kapanış
+## 9. Türkiye'de fatura
+
+Maliyeti Türkiye'nin tarifesiyle hesaplıyorum. Üç zamanlı tarifede elektriğin kilovatsaati gece 3 lira 26 kuruş, gündüz 4 lira 92 kuruş, akşam puant saatlerinde 7 lira.
+
+Tek zamanlı tarifede ise günde 8 kilovatsaate kadar 3 lira 24 kuruş, üstü 4 lira 86 kuruş.
+
+Az önceki günü iki tarifeyle de fiyatladım. Tek zamanlıda 37 lira, üç zamanlıda 50 lira tutuyor.
+
+Öğlenki bulaşık ve sabahki çamaşır geceye kaydırılırsa üç zamanlı fatura 46 liraya iniyor.
+
+Yani bu ev için tek zamanlı tarife daha ucuz. Demo bu karşılaştırmayı her ev için yapacak ve hangi tarifenin, hangi saatin daha ucuz olduğunu söyleyecek.
+
+## 10. İngiltere verisinden Türkiye'ye
+
+Veri İngiltere'den. Ama iki ülkede de şebeke 230 volt ve 50 hertz, hedeflediğim beş cihaz da Türk evlerinde var.
+
+İlk adımda modeli başka bir veri setinde de test edeceğim. Literatürde hata aynı ülke içinde pek artmıyor, başka ülkeye geçince artıyor.
+
+İkinci adımda Türk evlerinde yaygın olan klima, termosifon ve çay makinesi gibi yükleri eğitim verisine yapay olarak ekleyeceğim.
+
+Üçüncü adımda modeli saatlik veride de ölçeceğim, çünkü Türkiye'deki akıllı sayaçlar saatlik veri veriyor.
+
+Son adımda bir Türk evinde akıllı prizlerle birkaç hafta ölçüm alıp modelin hatasını gerçek Türk verisinde raporlayacağım.
+
+## 11. Demo, sınır ve kapanış
 
 Dönem sonunda tarayıcıdan açılan bir demo olacak.
 
-Bir günün sayaç verisini yükleyince hangi cihazın kaç kilovatsaat ve kaç lira harcadığını gösterecek.
+Bir günün sayaç verisini yükleyince cihaz bazında tüketimi, iki tarifedeki faturayı ve geceye kaydırılabilecek cihazı gösterecek.
 
-Projenin sınırları da var. Veri İngiltere'deki evlerden, Türkiye'deki evlerde cihazlar farklı olabilir.
+Bir sınırı var. Türkiye'den etiketli açık veri bulamadım, bu yüzden kendi ölçümüm küçük bir kontrol olacak.
 
 Faturanın hangi cihaza gittiğini gören bir ev, tasarrufa nereden başlayacağını bilir.
 
