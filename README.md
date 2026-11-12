@@ -38,13 +38,40 @@ Gradient boosting on window statistics helps for the kettle and the dishwasher. 
 
 These numbers use one training home and one test home, so they are a starting point and will change when more homes are used.
 
+## Cost with the Turkish tariff
+
+The instructor's feedback on the idea presentation was to price the result with Türkiye's day and night tariff. [tariff_cost.py](01_idea_proposal/analysis/tariff_cost.py) does this for the day shown above, using EPDK's regulated residential tariff valid from 4 April 2026 with taxes added by calculation.
+
+| Tariff | TL per kWh |
+|---|---|
+| Three-rate, night (22:00 to 06:00) | 3.26 |
+| Three-rate, day (06:00 to 17:00) | 4.92 |
+| Three-rate, peak (17:00 to 22:00) | 7.00 |
+| Single-rate, up to 8 kWh a day | 3.24 |
+| Single-rate, above 8 kWh a day | 4.86 |
+
+![The same day with the three tariff bands](01_idea_proposal/analysis/figures/house2_day_tariff.png)
+
+The day used 10.34 kWh. It costs 37.28 TL on the single-rate tariff and 49.95 TL on the three-rate tariff. Moving the midday dishwasher run and the morning wash to the night (2.54 kWh) lowers the three-rate bill to 45.74 TL, which is still above the single rate. The first 8 kWh of the single-rate tariff cost almost the same as night electricity, so the three-rate tariff only pays off for a home that can move most of its use to the night. The demo will make this comparison for any home and name the appliance worth moving.
+
+Prices change, and the tax add-on (5% consumption tax on the energy part, then 10% VAT) should be checked against a real bill.
+
+## Adapting UK data to Türkiye
+
+The homes in the data are British and I found no open appliance-level data from Türkiye. Both countries use 230 V at 50 Hz, and the five target appliances are also used in Turkish homes. The plan has four steps.
+
+1. Test the model on a second dataset. D'Incecco, Squartini and Zhong (2019) report that a model trained on REFIT has an error of 11.8 W on another UK dataset and 32.1 W on US homes, where a model trained locally reaches 23.7 W.
+2. Add loads that are common in Turkish homes and missing in REFIT (air conditioner, electric water heater, tea maker) to the training data artificially.
+3. Evaluate at 1-minute, 15-minute and hourly resolution, because the smart meters now being installed in Türkiye are reported to give hourly data.
+4. Measure one Turkish home with smart plugs for a few weeks and report the error on that data.
+
 ## Data
 
 REFIT Electrical Load Measurements (Cleaned), University of Strathclyde, CC BY 4.0. It has 20 UK homes recorded between 2013 and 2015, with the household total and nine appliance channels about every 8 seconds, 119.5 million rows in total. The data files are not stored in this repository. [The analysis README](01_idea_proposal/analysis/README.md) explains how to download them.
 
 Murray, D., Stankovic, L. and Stankovic, V. (2017). An electrical load measurements dataset of United Kingdom households from a two-year longitudinal study. Scientific Data 4, 160122. https://doi.org/10.1038/sdata.2016.122
 
-The homes are British and there is no Turkish data to test on, so cost figures in lira will be an illustration.
+The data files are large, so only the two small result files and the figures are kept here.
 
 ## Repository layout
 
@@ -52,8 +79,10 @@ The homes are British and there is no Turkish data to test on, so cost figures i
 01_idea_proposal/
   Fatura_Dedektifi_Group14_Idea_Proposal_EN.pdf, .docx    one-page proposal
   Fatura_Dedektifi_Grup14_Fikir_Onerisi_TR.pdf, .docx     the same proposal in Turkish
-  slides/                                                 slide deck and narration text, EN and TR
-  analysis/                                               script, results and figure for the first numbers
+  proposal_src/                                           script that builds both proposal files
+  slides/                                                 slide deck (11 slides) and narration text, EN and TR
+  slides/src/                                             script, fonts and HTML that build the slides
+  analysis/                                               scripts, results and figures for the first numbers and the tariff cost
 ```
 
 ## Team
