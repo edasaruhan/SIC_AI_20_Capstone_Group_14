@@ -1,0 +1,1280 @@
+{
+ "train_houses": [
+  2,
+  3
+ ],
+ "test_houses": [
+  5,
+  11
+ ],
+ "settings": {
+  "train_rows_1min": 600000,
+  "windows": {
+   "1": [
+    5,
+    15,
+    31,
+    61
+   ],
+   "15": [
+    3,
+    5,
+    9,
+    25
+   ],
+   "60": [
+    3,
+    5,
+    9,
+    25
+   ]
+  },
+  "min_bin_coverage": 0.8,
+  "min_day_coverage": 0.9,
+  "min_month_coverage": 0.8,
+  "seed": 0
+ },
+ "experiment1_resolution": {
+  "1min": {
+   "Fridge-Freezer": {
+    "true_mean_W": 45.5,
+    "mae_mean_W": 50.6,
+    "mae_gb_W": 41.3,
+    "test_days": 921,
+    "true_daily_kwh": 1.094,
+    "daily_err_median_kwh_mean": 0.412,
+    "daily_err_pct_mean": 40.0,
+    "daily_err_median_kwh_gb": 0.33,
+    "daily_err_pct_gb": 31.0
+   },
+   "Washing Machine": {
+    "true_mean_W": 22.2,
+    "mae_mean_W": 41.7,
+    "mae_gb_W": 37.3,
+    "test_days": 921,
+    "true_daily_kwh": 0.539,
+    "daily_err_median_kwh_mean": 0.571,
+    "daily_err_pct_mean": 129.6,
+    "daily_err_median_kwh_gb": 0.335,
+    "daily_err_pct_gb": 102.0
+   },
+   "Dishwasher": {
+    "true_mean_W": 38.5,
+    "mae_mean_W": 85.9,
+    "mae_gb_W": 45.8,
+    "test_days": 921,
+    "true_daily_kwh": 0.925,
+    "daily_err_median_kwh_mean": 0.953,
+    "daily_err_pct_mean": 92.4,
+    "daily_err_median_kwh_gb": 0.578,
+    "daily_err_pct_gb": 73.9
+   },
+   "Microwave": {
+    "true_mean_W": 18.5,
+    "mae_mean_W": 19.8,
+    "mae_gb_W": 19.9,
+    "test_days": 921,
+    "true_daily_kwh": 0.444,
+    "daily_err_median_kwh_mean": 0.142,
+    "daily_err_pct_mean": 87.3,
+    "daily_err_median_kwh_gb": 0.149,
+    "daily_err_pct_gb": 85.0
+   },
+   "Kettle": {
+    "true_mean_W": 22.2,
+    "mae_mean_W": 42.8,
+    "mae_gb_W": 20.8,
+    "test_days": 921,
+    "true_daily_kwh": 0.532,
+    "daily_err_median_kwh_mean": 0.165,
+    "daily_err_pct_mean": 40.7,
+    "daily_err_median_kwh_gb": 0.141,
+    "daily_err_pct_gb": 34.1
+   }
+  },
+  "15min": {
+   "Fridge-Freezer": {
+    "true_mean_W": 45.5,
+    "mae_mean_W": 35.7,
+    "mae_gb_W": 31.0,
+    "test_days": 921,
+    "true_daily_kwh": 1.094,
+    "daily_err_median_kwh_mean": 0.411,
+    "daily_err_pct_mean": 40.0,
+    "daily_err_median_kwh_gb": 0.267,
+    "daily_err_pct_gb": 26.5
+   },
+   "Washing Machine": {
+    "true_mean_W": 22.2,
+    "mae_mean_W": 41.2,
+    "mae_gb_W": 37.0,
+    "test_days": 921,
+    "true_daily_kwh": 0.538,
+    "daily_err_median_kwh_mean": 0.57,
+    "daily_err_pct_mean": 129.6,
+    "daily_err_median_kwh_gb": 0.348,
+    "daily_err_pct_gb": 102.5
+   },
+   "Dishwasher": {
+    "true_mean_W": 38.4,
+    "mae_mean_W": 85.0,
+    "mae_gb_W": 55.0,
+    "test_days": 921,
+    "true_daily_kwh": 0.925,
+    "daily_err_median_kwh_mean": 0.962,
+    "daily_err_pct_mean": 92.5,
+    "daily_err_median_kwh_gb": 0.505,
+    "daily_err_pct_gb": 66.8
+   },
+   "Microwave": {
+    "true_mean_W": 18.5,
+    "mae_mean_W": 19.7,
+    "mae_gb_W": 19.5,
+    "test_days": 921,
+    "true_daily_kwh": 0.443,
+    "daily_err_median_kwh_mean": 0.142,
+    "daily_err_pct_mean": 87.3,
+    "daily_err_median_kwh_gb": 0.148,
+    "daily_err_pct_gb": 85.9
+   },
+   "Kettle": {
+    "true_mean_W": 22.2,
+    "mae_mean_W": 40.1,
+    "mae_gb_W": 29.4,
+    "test_days": 921,
+    "true_daily_kwh": 0.531,
+    "daily_err_median_kwh_mean": 0.165,
+    "daily_err_pct_mean": 40.7,
+    "daily_err_median_kwh_gb": 0.136,
+    "daily_err_pct_gb": 33.6
+   }
+  },
+  "60min": {
+   "Fridge-Freezer": {
+    "true_mean_W": 45.5,
+    "mae_mean_W": 22.6,
+    "mae_gb_W": 22.0,
+    "test_days": 921,
+    "true_daily_kwh": 1.094,
+    "daily_err_median_kwh_mean": 0.412,
+    "daily_err_pct_mean": 40.0,
+    "daily_err_median_kwh_gb": 0.268,
+    "daily_err_pct_gb": 27.9
+   },
+   "Washing Machine": {
+    "true_mean_W": 22.1,
+    "mae_mean_W": 40.0,
+    "mae_gb_W": 36.0,
+    "test_days": 921,
+    "true_daily_kwh": 0.537,
+    "daily_err_median_kwh_mean": 0.57,
+    "daily_err_pct_mean": 129.9,
+    "daily_err_median_kwh_gb": 0.364,
+    "daily_err_pct_gb": 111.7
+   },
+   "Dishwasher": {
+    "true_mean_W": 38.4,
+    "mae_mean_W": 81.8,
+    "mae_gb_W": 80.4,
+    "test_days": 921,
+    "true_daily_kwh": 0.925,
+    "daily_err_median_kwh_mean": 0.968,
+    "daily_err_pct_mean": 92.2,
+    "daily_err_median_kwh_gb": 0.77,
+    "daily_err_pct_gb": 96.4
+   },
+   "Microwave": {
+    "true_mean_W": 18.5,
+    "mae_mean_W": 19.4,
+    "mae_gb_W": 19.2,
+    "test_days": 921,
+    "true_daily_kwh": 0.443,
+    "daily_err_median_kwh_mean": 0.142,
+    "daily_err_pct_mean": 87.3,
+    "daily_err_median_kwh_gb": 0.144,
+    "daily_err_pct_gb": 85.9
+   },
+   "Kettle": {
+    "true_mean_W": 22.2,
+    "mae_mean_W": 33.4,
+    "mae_gb_W": 28.2,
+    "test_days": 921,
+    "true_daily_kwh": 0.531,
+    "daily_err_median_kwh_mean": 0.164,
+    "daily_err_pct_mean": 40.8,
+    "daily_err_median_kwh_gb": 0.152,
+    "daily_err_pct_gb": 38.6
+   }
+  }
+ },
+ "experiment2_turkish_loads": {
+  "note": "synthetic loads are assumed signatures, not measurements",
+  "parameters": {
+   "Air conditioner": {
+    "day_prob_by_month": {
+     "5": 0.1,
+     "6": 0.4,
+     "7": 0.6,
+     "8": 0.6,
+     "9": 0.3
+    },
+    "start_hour": [
+     13.0,
+     19.0
+    ],
+    "run_hours": [
+     3.0,
+     6.0
+    ],
+    "compressor_w": [
+     900,
+     1300
+    ],
+    "on_min": [
+     8,
+     20
+    ],
+    "off_min": [
+     5,
+     12
+    ],
+    "fan_w": 40
+   },
+   "Water heater": {
+    "power_w": 2000,
+    "duration_min": [
+     20,
+     50
+    ],
+    "sessions": [
+     [
+      6.0,
+      8.5,
+      0.7
+     ],
+     [
+      18.0,
+      22.0,
+      0.8
+     ]
+    ]
+   },
+   "Tea maker": {
+    "boil_w": [
+     1600,
+     1800
+    ],
+    "boil_min": [
+     4,
+     7
+    ],
+    "sessions_per_day": [
+     2,
+     4
+    ],
+    "start_windows": [
+     [
+      7.0,
+      9.0
+     ],
+     [
+      15.0,
+      17.5
+     ],
+     [
+      19.0,
+      22.5
+     ]
+    ],
+    "keep_warm_min": [
+     30,
+     90
+    ],
+    "pulse_every_min": [
+     8,
+     12
+    ],
+    "pulse_min": 1
+   }
+  },
+  "synthetic_daily_kwh_test_homes": {
+   "House 5": {
+    "Air conditioner": 0.46,
+    "Water heater": 1.77,
+    "Tea maker": 0.94,
+    "measured total": 17.88
+   },
+   "House 11": {
+    "Air conditioner": 0.67,
+    "Water heater": 1.73,
+    "Tea maker": 0.95,
+    "measured total": 10.95
+   }
+  },
+  "cases": {
+   "clean": {
+    "Fridge-Freezer": {
+     "true_mean_W": 45.5,
+     "mae_mean_W": 50.6,
+     "mae_gb_W": 41.3,
+     "test_days": 921,
+     "true_daily_kwh": 1.094,
+     "daily_err_median_kwh_mean": 0.412,
+     "daily_err_pct_mean": 40.0,
+     "daily_err_median_kwh_gb": 0.33,
+     "daily_err_pct_gb": 31.0
+    },
+    "Washing Machine": {
+     "true_mean_W": 22.2,
+     "mae_mean_W": 41.7,
+     "mae_gb_W": 37.3,
+     "test_days": 921,
+     "true_daily_kwh": 0.539,
+     "daily_err_median_kwh_mean": 0.571,
+     "daily_err_pct_mean": 129.6,
+     "daily_err_median_kwh_gb": 0.335,
+     "daily_err_pct_gb": 102.0
+    },
+    "Dishwasher": {
+     "true_mean_W": 38.5,
+     "mae_mean_W": 85.9,
+     "mae_gb_W": 45.8,
+     "test_days": 921,
+     "true_daily_kwh": 0.925,
+     "daily_err_median_kwh_mean": 0.953,
+     "daily_err_pct_mean": 92.4,
+     "daily_err_median_kwh_gb": 0.578,
+     "daily_err_pct_gb": 73.9
+    },
+    "Microwave": {
+     "true_mean_W": 18.5,
+     "mae_mean_W": 19.8,
+     "mae_gb_W": 19.9,
+     "test_days": 921,
+     "true_daily_kwh": 0.444,
+     "daily_err_median_kwh_mean": 0.142,
+     "daily_err_pct_mean": 87.3,
+     "daily_err_median_kwh_gb": 0.149,
+     "daily_err_pct_gb": 85.0
+    },
+    "Kettle": {
+     "true_mean_W": 22.2,
+     "mae_mean_W": 42.8,
+     "mae_gb_W": 20.8,
+     "test_days": 921,
+     "true_daily_kwh": 0.532,
+     "daily_err_median_kwh_mean": 0.165,
+     "daily_err_pct_mean": 40.7,
+     "daily_err_median_kwh_gb": 0.141,
+     "daily_err_pct_gb": 34.1
+    }
+   },
+   "unseen": {
+    "Fridge-Freezer": {
+     "true_mean_W": 45.5,
+     "mae_mean_W": 50.6,
+     "mae_gb_W": 41.9,
+     "test_days": 921,
+     "true_daily_kwh": 1.094,
+     "daily_err_median_kwh_mean": 0.412,
+     "daily_err_pct_mean": 40.0,
+     "daily_err_median_kwh_gb": 0.32,
+     "daily_err_pct_gb": 29.7
+    },
+    "Washing Machine": {
+     "true_mean_W": 22.2,
+     "mae_mean_W": 41.7,
+     "mae_gb_W": 45.6,
+     "test_days": 921,
+     "true_daily_kwh": 0.539,
+     "daily_err_median_kwh_mean": 0.571,
+     "daily_err_pct_mean": 129.6,
+     "daily_err_median_kwh_gb": 0.476,
+     "daily_err_pct_gb": 123.1
+    },
+    "Dishwasher": {
+     "true_mean_W": 38.5,
+     "mae_mean_W": 85.9,
+     "mae_gb_W": 66.7,
+     "test_days": 921,
+     "true_daily_kwh": 0.925,
+     "daily_err_median_kwh_mean": 0.953,
+     "daily_err_pct_mean": 92.4,
+     "daily_err_median_kwh_gb": 0.475,
+     "daily_err_pct_gb": 63.8
+    },
+    "Microwave": {
+     "true_mean_W": 18.5,
+     "mae_mean_W": 19.8,
+     "mae_gb_W": 21.6,
+     "test_days": 921,
+     "true_daily_kwh": 0.444,
+     "daily_err_median_kwh_mean": 0.142,
+     "daily_err_pct_mean": 87.3,
+     "daily_err_median_kwh_gb": 0.15,
+     "daily_err_pct_gb": 84.5
+    },
+    "Kettle": {
+     "true_mean_W": 22.2,
+     "mae_mean_W": 42.8,
+     "mae_gb_W": 35.3,
+     "test_days": 921,
+     "true_daily_kwh": 0.532,
+     "daily_err_median_kwh_mean": 0.165,
+     "daily_err_pct_mean": 40.7,
+     "daily_err_median_kwh_gb": 0.3,
+     "daily_err_pct_gb": 61.1
+    }
+   },
+   "retrained": {
+    "Fridge-Freezer": {
+     "true_mean_W": 45.5,
+     "mae_mean_W": 50.6,
+     "mae_gb_W": 41.9,
+     "test_days": 921,
+     "true_daily_kwh": 1.094,
+     "daily_err_median_kwh_mean": 0.412,
+     "daily_err_pct_mean": 40.0,
+     "daily_err_median_kwh_gb": 0.32,
+     "daily_err_pct_gb": 30.0
+    },
+    "Washing Machine": {
+     "true_mean_W": 22.2,
+     "mae_mean_W": 41.7,
+     "mae_gb_W": 36.3,
+     "test_days": 921,
+     "true_daily_kwh": 0.539,
+     "daily_err_median_kwh_mean": 0.571,
+     "daily_err_pct_mean": 129.6,
+     "daily_err_median_kwh_gb": 0.313,
+     "daily_err_pct_gb": 102.7
+    },
+    "Dishwasher": {
+     "true_mean_W": 38.5,
+     "mae_mean_W": 85.9,
+     "mae_gb_W": 53.8,
+     "test_days": 921,
+     "true_daily_kwh": 0.925,
+     "daily_err_median_kwh_mean": 0.953,
+     "daily_err_pct_mean": 92.4,
+     "daily_err_median_kwh_gb": 0.502,
+     "daily_err_pct_gb": 69.0
+    },
+    "Microwave": {
+     "true_mean_W": 18.5,
+     "mae_mean_W": 19.8,
+     "mae_gb_W": 20.2,
+     "test_days": 921,
+     "true_daily_kwh": 0.444,
+     "daily_err_median_kwh_mean": 0.142,
+     "daily_err_pct_mean": 87.3,
+     "daily_err_median_kwh_gb": 0.144,
+     "daily_err_pct_gb": 84.6
+    },
+    "Kettle": {
+     "true_mean_W": 22.2,
+     "mae_mean_W": 42.8,
+     "mae_gb_W": 24.4,
+     "test_days": 921,
+     "true_daily_kwh": 0.532,
+     "daily_err_median_kwh_mean": 0.165,
+     "daily_err_pct_mean": 40.7,
+     "daily_err_median_kwh_gb": 0.151,
+     "daily_err_pct_gb": 35.3
+    }
+   }
+  }
+ },
+ "experiment3_bills": {
+  "tariff": "EPDK regulated tariff, low-voltage residential (mesken, AG), valid from 2026-04-04",
+  "tax_note": "all-in = (energy x 1.05 + distribution) x 1.10; our calculation, check against a real bill",
+  "price_tl_per_kwh": {
+   "single_low": 3.238,
+   "single_high": 4.857,
+   "day": 4.92,
+   "peak": 6.996,
+   "night": 3.261
+  },
+  "month_rule": "a calendar month is billed only if at least 80% of its minutes have data; gaps are filled with that month's mean power in the same band",
+  "houses": {
+   "House 2": {
+    "first_day": "2013-09-17",
+    "last_day": "2015-05-28",
+    "minutes_with_data_pct": 75.4,
+    "average_daily_kwh": {
+     "Household total": 11.063,
+     "Dishwasher": 1.452,
+     "Washing Machine": 0.434
+    },
+    "band_share_pct": {
+     "Household total": {
+      "day": 54.8,
+      "peak": 28.6,
+      "night": 16.7
+     },
+     "Dishwasher": {
+      "day": 39.5,
+      "peak": 48.8,
+      "night": 11.7
+     },
+     "Washing Machine": {
+      "day": 77.8,
+      "peak": 19.9,
+      "night": 2.3
+     }
+    },
+    "months_used": 14,
+    "months_skipped": [
+     "2013-09 (43%)",
+     "2013-10 (78%)",
+     "2013-11 (0%)",
+     "2013-12 (0%)",
+     "2014-01 (0%)",
+     "2014-02 (13%)",
+     "2015-05 (60%)"
+    ],
+    "average_monthly": {
+     "kwh": 342.8,
+     "single_rate_tl": 1274.7,
+     "three_rate_tl": 1795.69,
+     "three_rate_shifted_tl": 1655.67,
+     "shifted_kwh": 53.4,
+     "months_single_rate_cheaper": 14,
+     "months_single_rate_cheaper_than_shifted": 14
+    },
+    "months": [
+     {
+      "month": "2014-03",
+      "coverage_pct": 96.5,
+      "kwh": 313.5,
+      "daily_kwh": 10.11,
+      "single_rate_tl": 1121.27,
+      "three_rate_tl": 1696.27,
+      "three_rate_shifted_tl": 1526.88,
+      "shifted_kwh": 64.1
+     },
+     {
+      "month": "2014-04",
+      "coverage_pct": 99.0,
+      "kwh": 268.9,
+      "daily_kwh": 8.96,
+      "single_rate_tl": 917.28,
+      "three_rate_tl": 1404.55,
+      "three_rate_shifted_tl": 1271.7,
+      "shifted_kwh": 51.9
+     },
+     {
+      "month": "2014-05",
+      "coverage_pct": 99.4,
+      "kwh": 304.2,
+      "daily_kwh": 9.81,
+      "single_rate_tl": 1075.91,
+      "three_rate_tl": 1605.44,
+      "three_rate_shifted_tl": 1450.37,
+      "shifted_kwh": 57.8
+     },
+     {
+      "month": "2014-06",
+      "coverage_pct": 99.9,
+      "kwh": 275.1,
+      "daily_kwh": 9.17,
+      "single_rate_tl": 947.45,
+      "three_rate_tl": 1404.54,
+      "three_rate_shifted_tl": 1284.78,
+      "shifted_kwh": 44.9
+     },
+     {
+      "month": "2014-07",
+      "coverage_pct": 98.9,
+      "kwh": 255.2,
+      "daily_kwh": 8.23,
+      "single_rate_tl": 837.89,
+      "three_rate_tl": 1317.96,
+      "three_rate_shifted_tl": 1226.99,
+      "shifted_kwh": 34.9
+     },
+     {
+      "month": "2014-08",
+      "coverage_pct": 99.6,
+      "kwh": 212.9,
+      "daily_kwh": 6.87,
+      "single_rate_tl": 689.4,
+      "three_rate_tl": 1101.97,
+      "three_rate_shifted_tl": 1032.01,
+      "shifted_kwh": 31.8
+     },
+     {
+      "month": "2014-09",
+      "coverage_pct": 99.6,
+      "kwh": 299.0,
+      "daily_kwh": 9.97,
+      "single_rate_tl": 1063.58,
+      "three_rate_tl": 1600.29,
+      "three_rate_shifted_tl": 1480.75,
+      "shifted_kwh": 50.1
+     },
+     {
+      "month": "2014-10",
+      "coverage_pct": 97.1,
+      "kwh": 343.5,
+      "daily_kwh": 11.08,
+      "single_rate_tl": 1266.8,
+      "three_rate_tl": 1834.46,
+      "three_rate_shifted_tl": 1693.77,
+      "shifted_kwh": 48.9
+     },
+     {
+      "month": "2014-11",
+      "coverage_pct": 84.4,
+      "kwh": 326.0,
+      "daily_kwh": 10.87,
+      "single_rate_tl": 1194.92,
+      "three_rate_tl": 1711.07,
+      "three_rate_shifted_tl": 1572.94,
+      "shifted_kwh": 55.8
+     },
+     {
+      "month": "2014-12",
+      "coverage_pct": 88.8,
+      "kwh": 535.5,
+      "daily_kwh": 17.27,
+      "single_rate_tl": 2199.39,
+      "three_rate_tl": 2769.76,
+      "three_rate_shifted_tl": 2613.52,
+      "shifted_kwh": 57.2
+     },
+     {
+      "month": "2015-01",
+      "coverage_pct": 99.9,
+      "kwh": 542.2,
+      "daily_kwh": 17.49,
+      "single_rate_tl": 2232.1,
+      "three_rate_tl": 2847.22,
+      "three_rate_shifted_tl": 2638.43,
+      "shifted_kwh": 73.3
+     },
+     {
+      "month": "2015-02",
+      "coverage_pct": 99.7,
+      "kwh": 390.1,
+      "daily_kwh": 13.93,
+      "single_rate_tl": 1531.99,
+      "three_rate_tl": 2031.21,
+      "three_rate_shifted_tl": 1902.21,
+      "shifted_kwh": 47.7
+     },
+     {
+      "month": "2015-03",
+      "coverage_pct": 89.3,
+      "kwh": 362.5,
+      "daily_kwh": 11.69,
+      "single_rate_tl": 1359.25,
+      "three_rate_tl": 1901.51,
+      "three_rate_shifted_tl": 1743.35,
+      "shifted_kwh": 60.0
+     },
+     {
+      "month": "2015-04",
+      "coverage_pct": 82.6,
+      "kwh": 370.0,
+      "daily_kwh": 12.33,
+      "single_rate_tl": 1408.61,
+      "three_rate_tl": 1913.36,
+      "three_rate_shifted_tl": 1741.64,
+      "shifted_kwh": 69.0
+     }
+    ]
+   },
+   "House 3": {
+    "first_day": "2013-09-25",
+    "last_day": "2015-06-02",
+    "minutes_with_data_pct": 88.6,
+    "average_daily_kwh": {
+     "Household total": 16.245,
+     "Dishwasher": 1.183,
+     "Washing Machine": 0.688,
+     "Tumble Dryer": 1.322
+    },
+    "band_share_pct": {
+     "Household total": {
+      "day": 55.2,
+      "peak": 27.6,
+      "night": 17.1
+     },
+     "Dishwasher": {
+      "day": 65.7,
+      "peak": 30.6,
+      "night": 3.7
+     },
+     "Washing Machine": {
+      "day": 86.3,
+      "peak": 11.5,
+      "night": 2.2
+     },
+     "Tumble Dryer": {
+      "day": 76.1,
+      "peak": 20.7,
+      "night": 3.3
+     }
+    },
+    "months_used": 17,
+    "months_skipped": [
+     "2013-09 (15%)",
+     "2014-01 (74%)",
+     "2014-02 (0%)",
+     "2015-05 (72%)",
+     "2015-06 (5%)"
+    ],
+    "average_monthly": {
+     "kwh": 493.6,
+     "single_rate_tl": 2002.77,
+     "three_rate_tl": 2569.39,
+     "three_rate_shifted_tl": 2449.91,
+     "shifted_kwh": 55.4,
+     "months_single_rate_cheaper": 17,
+     "months_single_rate_cheaper_than_shifted": 17
+    },
+    "months": [
+     {
+      "month": "2013-10",
+      "coverage_pct": 95.4,
+      "kwh": 306.3,
+      "daily_kwh": 9.88,
+      "single_rate_tl": 1086.01,
+      "three_rate_tl": 1563.99,
+      "three_rate_shifted_tl": 1532.45,
+      "shifted_kwh": 17.0
+     },
+     {
+      "month": "2013-11",
+      "coverage_pct": 96.2,
+      "kwh": 514.4,
+      "daily_kwh": 17.15,
+      "single_rate_tl": 2109.77,
+      "three_rate_tl": 2719.45,
+      "three_rate_shifted_tl": 2604.34,
+      "shifted_kwh": 57.0
+     },
+     {
+      "month": "2013-12",
+      "coverage_pct": 99.6,
+      "kwh": 567.2,
+      "daily_kwh": 18.3,
+      "single_rate_tl": 2353.24,
+      "three_rate_tl": 3007.13,
+      "three_rate_shifted_tl": 2874.41,
+      "shifted_kwh": 62.3
+     },
+     {
+      "month": "2014-03",
+      "coverage_pct": 81.4,
+      "kwh": 568.8,
+      "daily_kwh": 18.35,
+      "single_rate_tl": 2361.29,
+      "three_rate_tl": 2879.2,
+      "three_rate_shifted_tl": 2734.74,
+      "shifted_kwh": 64.3
+     },
+     {
+      "month": "2014-04",
+      "coverage_pct": 99.8,
+      "kwh": 599.7,
+      "daily_kwh": 19.99,
+      "single_rate_tl": 2524.44,
+      "three_rate_tl": 3060.17,
+      "three_rate_shifted_tl": 2909.12,
+      "shifted_kwh": 72.0
+     },
+     {
+      "month": "2014-05",
+      "coverage_pct": 99.7,
+      "kwh": 487.5,
+      "daily_kwh": 15.73,
+      "single_rate_tl": 1966.44,
+      "three_rate_tl": 2407.48,
+      "three_rate_shifted_tl": 2308.69,
+      "shifted_kwh": 49.5
+     },
+     {
+      "month": "2014-06",
+      "coverage_pct": 99.7,
+      "kwh": 444.0,
+      "daily_kwh": 14.8,
+      "single_rate_tl": 1768.0,
+      "three_rate_tl": 2252.14,
+      "three_rate_shifted_tl": 2130.48,
+      "shifted_kwh": 57.4
+     },
+     {
+      "month": "2014-07",
+      "coverage_pct": 98.4,
+      "kwh": 357.5,
+      "daily_kwh": 11.53,
+      "single_rate_tl": 1334.74,
+      "three_rate_tl": 1815.29,
+      "three_rate_shifted_tl": 1736.33,
+      "shifted_kwh": 40.4
+     },
+     {
+      "month": "2014-08",
+      "coverage_pct": 94.5,
+      "kwh": 471.3,
+      "daily_kwh": 15.2,
+      "single_rate_tl": 1887.54,
+      "three_rate_tl": 2462.74,
+      "three_rate_shifted_tl": 2332.39,
+      "shifted_kwh": 56.8
+     },
+     {
+      "month": "2014-09",
+      "coverage_pct": 96.0,
+      "kwh": 406.5,
+      "daily_kwh": 13.55,
+      "single_rate_tl": 1585.59,
+      "three_rate_tl": 2093.75,
+      "three_rate_shifted_tl": 1993.63,
+      "shifted_kwh": 44.1
+     },
+     {
+      "month": "2014-10",
+      "coverage_pct": 96.4,
+      "kwh": 453.8,
+      "daily_kwh": 14.64,
+      "single_rate_tl": 1802.72,
+      "three_rate_tl": 2367.14,
+      "three_rate_shifted_tl": 2257.81,
+      "shifted_kwh": 52.5
+     },
+     {
+      "month": "2014-11",
+      "coverage_pct": 93.5,
+      "kwh": 465.8,
+      "daily_kwh": 15.53,
+      "single_rate_tl": 1874.01,
+      "three_rate_tl": 2458.15,
+      "three_rate_shifted_tl": 2348.38,
+      "shifted_kwh": 52.5
+     },
+     {
+      "month": "2014-12",
+      "coverage_pct": 96.4,
+      "kwh": 673.3,
+      "daily_kwh": 21.72,
+      "single_rate_tl": 2868.85,
+      "three_rate_tl": 3578.81,
+      "three_rate_shifted_tl": 3410.22,
+      "shifted_kwh": 82.8
+     },
+     {
+      "month": "2015-01",
+      "coverage_pct": 99.9,
+      "kwh": 596.6,
+      "daily_kwh": 19.25,
+      "single_rate_tl": 2496.18,
+      "three_rate_tl": 3148.88,
+      "three_rate_shifted_tl": 3023.58,
+      "shifted_kwh": 53.4
+     },
+     {
+      "month": "2015-02",
+      "coverage_pct": 100.0,
+      "kwh": 515.7,
+      "daily_kwh": 18.42,
+      "single_rate_tl": 2142.13,
+      "three_rate_tl": 2764.71,
+      "three_rate_shifted_tl": 2628.5,
+      "shifted_kwh": 59.9
+     },
+     {
+      "month": "2015-03",
+      "coverage_pct": 89.7,
+      "kwh": 525.4,
+      "daily_kwh": 16.95,
+      "single_rate_tl": 2150.26,
+      "three_rate_tl": 2782.73,
+      "three_rate_shifted_tl": 2655.66,
+      "shifted_kwh": 57.7
+     },
+     {
+      "month": "2015-04",
+      "coverage_pct": 83.1,
+      "kwh": 437.4,
+      "daily_kwh": 14.58,
+      "single_rate_tl": 1735.83,
+      "three_rate_tl": 2317.82,
+      "three_rate_shifted_tl": 2167.82,
+      "shifted_kwh": 62.7
+     }
+    ]
+   },
+   "House 5": {
+    "first_day": "2013-09-26",
+    "last_day": "2015-07-06",
+    "minutes_with_data_pct": 90.7,
+    "average_daily_kwh": {
+     "Household total": 17.879,
+     "Dishwasher": 1.391,
+     "Washing Machine": 0.758,
+     "Tumble Dryer": 2.144
+    },
+    "band_share_pct": {
+     "Household total": {
+      "day": 49.9,
+      "peak": 28.1,
+      "night": 22.0
+     },
+     "Dishwasher": {
+      "day": 31.3,
+      "peak": 11.6,
+      "night": 57.2
+     },
+     "Washing Machine": {
+      "day": 59.9,
+      "peak": 22.8,
+      "night": 17.3
+     },
+     "Tumble Dryer": {
+      "day": 55.7,
+      "peak": 26.8,
+      "night": 17.5
+     }
+    },
+    "months_used": 17,
+    "months_skipped": [
+     "2013-09 (15%)",
+     "2014-01 (78%)",
+     "2014-02 (17%)",
+     "2015-05 (72%)",
+     "2015-06 (74%)",
+     "2015-07 (18%)"
+    ],
+    "average_monthly": {
+     "kwh": 550.8,
+     "single_rate_tl": 2280.56,
+     "three_rate_tl": 2829.35,
+     "three_rate_shifted_tl": 2745.33,
+     "shifted_kwh": 37.7,
+     "months_single_rate_cheaper": 17,
+     "months_single_rate_cheaper_than_shifted": 17
+    },
+    "months": [
+     {
+      "month": "2013-10",
+      "coverage_pct": 99.4,
+      "kwh": 506.0,
+      "daily_kwh": 16.32,
+      "single_rate_tl": 2056.38,
+      "three_rate_tl": 2624.35,
+      "three_rate_shifted_tl": 2563.88,
+      "shifted_kwh": 28.1
+     },
+     {
+      "month": "2013-11",
+      "coverage_pct": 96.2,
+      "kwh": 560.2,
+      "daily_kwh": 18.67,
+      "single_rate_tl": 2332.24,
+      "three_rate_tl": 2988.48,
+      "three_rate_shifted_tl": 2903.97,
+      "shifted_kwh": 39.5
+     },
+     {
+      "month": "2013-12",
+      "coverage_pct": 99.6,
+      "kwh": 587.5,
+      "daily_kwh": 18.95,
+      "single_rate_tl": 2451.89,
+      "three_rate_tl": 3098.59,
+      "three_rate_shifted_tl": 3007.97,
+      "shifted_kwh": 42.9
+     },
+     {
+      "month": "2014-03",
+      "coverage_pct": 99.5,
+      "kwh": 519.7,
+      "daily_kwh": 16.77,
+      "single_rate_tl": 2122.89,
+      "three_rate_tl": 2717.74,
+      "three_rate_shifted_tl": 2576.79,
+      "shifted_kwh": 62.9
+     },
+     {
+      "month": "2014-04",
+      "coverage_pct": 99.3,
+      "kwh": 489.2,
+      "daily_kwh": 16.31,
+      "single_rate_tl": 1987.37,
+      "three_rate_tl": 2471.0,
+      "three_rate_shifted_tl": 2374.67,
+      "shifted_kwh": 46.0
+     },
+     {
+      "month": "2014-05",
+      "coverage_pct": 99.8,
+      "kwh": 497.8,
+      "daily_kwh": 16.06,
+      "single_rate_tl": 2016.53,
+      "three_rate_tl": 2499.62,
+      "three_rate_shifted_tl": 2435.59,
+      "shifted_kwh": 31.3
+     },
+     {
+      "month": "2014-06",
+      "coverage_pct": 99.8,
+      "kwh": 453.5,
+      "daily_kwh": 15.12,
+      "single_rate_tl": 1813.87,
+      "three_rate_tl": 2274.96,
+      "three_rate_shifted_tl": 2212.82,
+      "shifted_kwh": 28.0
+     },
+     {
+      "month": "2014-07",
+      "coverage_pct": 98.6,
+      "kwh": 409.2,
+      "daily_kwh": 13.2,
+      "single_rate_tl": 1585.97,
+      "three_rate_tl": 2083.56,
+      "three_rate_shifted_tl": 2040.03,
+      "shifted_kwh": 19.3
+     },
+     {
+      "month": "2014-08",
+      "coverage_pct": 99.5,
+      "kwh": 467.0,
+      "daily_kwh": 15.06,
+      "single_rate_tl": 1866.74,
+      "three_rate_tl": 2334.49,
+      "three_rate_shifted_tl": 2285.66,
+      "shifted_kwh": 20.9
+     },
+     {
+      "month": "2014-09",
+      "coverage_pct": 99.6,
+      "kwh": 544.8,
+      "daily_kwh": 18.16,
+      "single_rate_tl": 2257.39,
+      "three_rate_tl": 2738.52,
+      "three_rate_shifted_tl": 2658.08,
+      "shifted_kwh": 33.9
+     },
+     {
+      "month": "2014-10",
+      "coverage_pct": 96.5,
+      "kwh": 644.5,
+      "daily_kwh": 20.79,
+      "single_rate_tl": 2728.92,
+      "three_rate_tl": 3306.7,
+      "three_rate_shifted_tl": 3214.39,
+      "shifted_kwh": 40.0
+     },
+     {
+      "month": "2014-11",
+      "coverage_pct": 98.1,
+      "kwh": 582.2,
+      "daily_kwh": 19.41,
+      "single_rate_tl": 2439.14,
+      "three_rate_tl": 3022.17,
+      "three_rate_shifted_tl": 2949.96,
+      "shifted_kwh": 32.4
+     },
+     {
+      "month": "2014-12",
+      "coverage_pct": 96.7,
+      "kwh": 728.9,
+      "daily_kwh": 23.51,
+      "single_rate_tl": 3139.02,
+      "three_rate_tl": 3782.13,
+      "three_rate_shifted_tl": 3652.82,
+      "shifted_kwh": 56.4
+     },
+     {
+      "month": "2015-01",
+      "coverage_pct": 99.9,
+      "kwh": 741.1,
+      "daily_kwh": 23.91,
+      "single_rate_tl": 3197.84,
+      "three_rate_tl": 3848.15,
+      "three_rate_shifted_tl": 3750.05,
+      "shifted_kwh": 38.2
+     },
+     {
+      "month": "2015-02",
+      "coverage_pct": 99.9,
+      "kwh": 574.6,
+      "daily_kwh": 20.52,
+      "single_rate_tl": 2428.15,
+      "three_rate_tl": 2957.01,
+      "three_rate_shifted_tl": 2849.24,
+      "shifted_kwh": 46.2
+     },
+     {
+      "month": "2015-03",
+      "coverage_pct": 89.6,
+      "kwh": 556.0,
+      "daily_kwh": 17.93,
+      "single_rate_tl": 2298.79,
+      "three_rate_tl": 2825.58,
+      "three_rate_shifted_tl": 2734.08,
+      "shifted_kwh": 40.5
+     },
+     {
+      "month": "2015-04",
+      "coverage_pct": 82.8,
+      "kwh": 501.3,
+      "daily_kwh": 16.71,
+      "single_rate_tl": 2046.33,
+      "three_rate_tl": 2525.85,
+      "three_rate_shifted_tl": 2460.68,
+      "shifted_kwh": 33.8
+     }
+    ]
+   },
+   "House 11": {
+    "first_day": "2014-06-03",
+    "last_day": "2015-06-30",
+    "minutes_with_data_pct": 89.0,
+    "average_daily_kwh": {
+     "Household total": 10.948,
+     "Dishwasher": 0.136,
+     "Washing Machine": 0.156
+    },
+    "band_share_pct": {
+     "Household total": {
+      "day": 74.8,
+      "peak": 11.7,
+      "night": 13.5
+     },
+     "Dishwasher": {
+      "day": 75.1,
+      "peak": 9.5,
+      "night": 15.4
+     },
+     "Washing Machine": {
+      "day": 89.4,
+      "peak": 7.2,
+      "night": 3.4
+     }
+    },
+    "months_used": 10,
+    "months_skipped": [
+     "2014-09 (64%)",
+     "2015-05 (72%)",
+     "2015-06 (74%)"
+    ],
+    "average_monthly": {
+     "kwh": 315.1,
+     "single_rate_tl": 1170.88,
+     "three_rate_tl": 1554.82,
+     "three_rate_shifted_tl": 1538.68,
+     "shifted_kwh": 8.6,
+     "months_single_rate_cheaper": 10,
+     "months_single_rate_cheaper_than_shifted": 10
+    },
+    "months": [
+     {
+      "month": "2014-06",
+      "coverage_pct": 91.5,
+      "kwh": 451.2,
+      "daily_kwh": 15.04,
+      "single_rate_tl": 1803.11,
+      "three_rate_tl": 2226.26,
+      "three_rate_shifted_tl": 2211.43,
+      "shifted_kwh": 8.9
+     },
+     {
+      "month": "2014-07",
+      "coverage_pct": 98.4,
+      "kwh": 506.9,
+      "daily_kwh": 16.35,
+      "single_rate_tl": 2060.7,
+      "three_rate_tl": 2507.86,
+      "three_rate_shifted_tl": 2488.05,
+      "shifted_kwh": 11.7
+     },
+     {
+      "month": "2014-08",
+      "coverage_pct": 99.5,
+      "kwh": 430.5,
+      "daily_kwh": 13.89,
+      "single_rate_tl": 1689.63,
+      "three_rate_tl": 2117.37,
+      "three_rate_shifted_tl": 2111.61,
+      "shifted_kwh": 3.4
+     },
+     {
+      "month": "2014-10",
+      "coverage_pct": 95.6,
+      "kwh": 247.9,
+      "daily_kwh": 8.0,
+      "single_rate_tl": 802.66,
+      "three_rate_tl": 1207.69,
+      "three_rate_shifted_tl": 1190.87,
+      "shifted_kwh": 9.3
+     },
+     {
+      "month": "2014-11",
+      "coverage_pct": 84.4,
+      "kwh": 173.0,
+      "daily_kwh": 5.77,
+      "single_rate_tl": 560.27,
+      "three_rate_tl": 847.37,
+      "three_rate_shifted_tl": 826.76,
+      "shifted_kwh": 10.9
+     },
+     {
+      "month": "2014-12",
+      "coverage_pct": 96.7,
+      "kwh": 165.5,
+      "daily_kwh": 5.34,
+      "single_rate_tl": 536.02,
+      "three_rate_tl": 819.14,
+      "three_rate_shifted_tl": 808.81,
+      "shifted_kwh": 4.3
+     },
+     {
+      "month": "2015-01",
+      "coverage_pct": 99.9,
+      "kwh": 188.2,
+      "daily_kwh": 6.07,
+      "single_rate_tl": 609.4,
+      "three_rate_tl": 925.52,
+      "three_rate_shifted_tl": 908.72,
+      "shifted_kwh": 8.4
+     },
+     {
+      "month": "2015-02",
+      "coverage_pct": 100.0,
+      "kwh": 225.9,
+      "daily_kwh": 8.07,
+      "single_rate_tl": 734.6,
+      "three_rate_tl": 1138.95,
+      "three_rate_shifted_tl": 1116.89,
+      "shifted_kwh": 11.6
+     },
+     {
+      "month": "2015-03",
+      "coverage_pct": 89.7,
+      "kwh": 292.0,
+      "daily_kwh": 9.42,
+      "single_rate_tl": 1016.81,
+      "three_rate_tl": 1430.03,
+      "three_rate_shifted_tl": 1418.21,
+      "shifted_kwh": 7.0
+     },
+     {
+      "month": "2015-04",
+      "coverage_pct": 83.1,
+      "kwh": 470.3,
+      "daily_kwh": 15.68,
+      "single_rate_tl": 1895.64,
+      "three_rate_tl": 2328.03,
+      "three_rate_shifted_tl": 2305.48,
+      "shifted_kwh": 10.6
+     }
+    ]
+   }
+  }
+ },
+ "runtime_s": 208
+}

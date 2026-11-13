@@ -20,6 +20,8 @@ Elektrik faturasında tek bir toplam yazar, hangi cihazın ne kadar harcadığı
 |---|---|---|
 | 01 | Idea proposal | [Proposal (EN)](01_idea_proposal/Fatura_Dedektifi_Group14_Idea_Proposal_EN.pdf), [Fikir önerisi (TR)](01_idea_proposal/Fatura_Dedektifi_Grup14_Fikir_Onerisi_TR.pdf), [Slides (EN)](01_idea_proposal/slides/Fatura_Dedektifi_Group14_Slides_EN.pdf), [Slaytlar (TR)](01_idea_proposal/slides/Fatura_Dedektifi_Group14_Slides_TR.pdf), [first analysis](01_idea_proposal/analysis/) |
 
+| 02 | Adapting the project to Türkiye | [Summary](02_turkiye_adaptation/), [Turkish load profile and tariff choice](02_turkiye_adaptation/profile/), [adaptation experiments](02_turkiye_adaptation/experiments/) |
+
 Later assignments will get their own numbered folders.
 
 ## First results
@@ -65,13 +67,18 @@ The homes in the data are British and I found no open appliance-level data from 
 3. Evaluate at 1-minute, 15-minute and hourly resolution, because the smart meters now being installed in Türkiye are reported to give hourly data.
 4. Measure one Turkish home with smart plugs for a few weeks and report the error on that data.
 
+Steps 2 and 3 now have first measurements, and a Turkish load profile was added. The details are in [02_turkiye_adaptation/](02_turkiye_adaptation/).
+
+- EPİAŞ's 2025 residential profile puts 46.8% of household energy in the day band, 22.6% in the peak band and 30.6% in the night band. With that shape the three-rate tariff costs 240 to 400 TL more per month than the single-rate tariff at 4.9 to 15 kWh a day. Up to 8 kWh a day it can never be cheaper. At 10 kWh a day a home would need 87% of its use at night.
+- At 15-minute resolution the gradient boosting baseline loses almost nothing in daily energy. At hourly resolution the dishwasher's daily error rises from 74% to 96%.
+- Synthetic air conditioner, water heater and tea maker loads raise the kettle error from 20.8 W to 35.3 W when the model has never seen them. Retraining with the loads brings it back to 24.4 W.
+- Four REFIT homes priced over 10 to 17 months each are cheaper on the single-rate tariff in every month. Moving the dishwasher and washing machine to the night saves 16 to 140 TL a month on the three-rate tariff.
+
 ## Data
 
 REFIT Electrical Load Measurements (Cleaned), University of Strathclyde, CC BY 4.0. It has 20 UK homes recorded between 2013 and 2015, with the household total and nine appliance channels about every 8 seconds, 119.5 million rows in total. The data files are not stored in this repository. [The analysis README](01_idea_proposal/analysis/README.md) explains how to download them.
 
 Murray, D., Stankovic, L. and Stankovic, V. (2017). An electrical load measurements dataset of United Kingdom households from a two-year longitudinal study. Scientific Data 4, 160122. https://doi.org/10.1038/sdata.2016.122
-
-The data files are large, so only the two small result files and the figures are kept here.
 
 ## Repository layout
 
@@ -83,6 +90,9 @@ The data files are large, so only the two small result files and the figures are
   slides/                                                 slide deck (11 slides) and narration text, EN and TR
   slides/src/                                             script, fonts and HTML that build the slides
   analysis/                                               scripts, results and figures for the first numbers and the tariff cost
+02_turkiye_adaptation/
+  profile/                                                Turkish residential load profile (EPİAŞ) and tariff choice
+  experiments/                                            resolution, Turkish loads and yearly bills on four REFIT homes
 ```
 
 ## Team

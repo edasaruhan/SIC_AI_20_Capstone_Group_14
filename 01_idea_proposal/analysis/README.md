@@ -19,6 +19,9 @@ two homes from the REFIT Electrical Load Measurements (Cleaned) dataset and does
 Download `CLEAN_REFIT_081116.7z` (about 514 MB) from the dataset page with a normal browser:
 https://pureportal.strath.ac.uk/en/datasets/refit-electrical-load-measurements-cleaned/
 
+The portal sometimes blocks scripted downloads. Houses 1, 2, 3, 4, 5 and 11 can also be downloaded one
+by one from Zenodo (https://doi.org/10.5281/zenodo.5063428).
+
 The archive holds 20 CSV files (about 6.9 GB unpacked). Only two are needed:
 
 ```

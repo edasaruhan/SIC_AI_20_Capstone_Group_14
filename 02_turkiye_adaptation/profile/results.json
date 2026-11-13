@@ -1,0 +1,261 @@
+{
+ "profile_source": [
+  "EPIAS weighted profile coefficients 2025, group 'Mesken - AG', all distribution companies",
+  "source page: https://www.epias.com.tr/genel/2025-yili-profil-katsayilari/",
+  "files: https://www.epias.com.tr/wp-content/uploads/2024/11/<month file>.xlsx (12 monthly files)",
+  "downloaded: 2026-11-13",
+  "single_share: sum over the month's days of the single-rate (Tek Zamanli) coefficient for this hour of day; adds to 1 over 24 hours",
+  "three_within_band: same for the three-rate (Uc Zamanli) coefficient; adds to 1 inside each tariff band"
+ ],
+ "profile_group": "Mesken - AG",
+ "profile_year": 2025,
+ "how_shapes_were_built": "Single-rate (Tek Zamanli) coefficients of each company summed over the month's days by hour of day (share of the month's energy in each hour of day). National shape for a month = plain mean over the 21 distribution companies. Year shape = mean of the 12 monthly shapes weighted by days in month.",
+ "three_rate_shape": {
+  "available": false,
+  "reason": "Three-rate (Uc Zamanli) coefficients add up to 1 inside each band and equal the single-rate coefficients rescaled inside each band, so they carry no information on how three-rate customers split energy between bands.",
+  "max_abs_diff_vs_rescaled_single": 3.277512983235198e-10
+ },
+ "tariff_source": "EPDK regulated tariff, low-voltage residential (mesken, AG), valid from 2026-04-04",
+ "tax_note": "all-in = (energy x 1.05 + distribution) x 1.10 / 100; our calculation",
+ "price_tl_per_kwh": {
+  "single_low": 3.238,
+  "single_high": 4.857,
+  "day": 4.9204,
+  "peak": 6.9958,
+  "night": 3.2607
+ },
+ "hourly_shape_pct": {
+  "January": [
+   3.85,
+   3.684,
+   3.617,
+   3.616,
+   3.627,
+   3.681,
+   3.896,
+   4.075,
+   4.203,
+   4.332,
+   4.378,
+   4.427,
+   4.412,
+   4.38,
+   4.335,
+   4.363,
+   4.404,
+   4.495,
+   4.667,
+   4.606,
+   4.438,
+   4.291,
+   4.172,
+   4.051
+  ],
+  "July": [
+   3.984,
+   3.817,
+   3.683,
+   3.589,
+   3.564,
+   3.492,
+   3.527,
+   3.747,
+   4.024,
+   4.237,
+   4.361,
+   4.449,
+   4.5,
+   4.511,
+   4.481,
+   4.469,
+   4.494,
+   4.498,
+   4.505,
+   4.497,
+   4.549,
+   4.494,
+   4.348,
+   4.181
+  ],
+  "Year": [
+   3.909,
+   3.762,
+   3.67,
+   3.623,
+   3.628,
+   3.637,
+   3.751,
+   3.936,
+   4.137,
+   4.282,
+   4.356,
+   4.402,
+   4.416,
+   4.391,
+   4.364,
+   4.368,
+   4.415,
+   4.463,
+   4.577,
+   4.603,
+   4.55,
+   4.408,
+   4.254,
+   4.098
+  ]
+ },
+ "band_share_pct": {
+  "January": {
+   "day": 47.21,
+   "peak": 22.5,
+   "night": 30.3
+  },
+  "July": {
+   "day": 46.8,
+   "peak": 22.54,
+   "night": 30.66
+  },
+  "Year": {
+   "day": 46.82,
+   "peak": 22.6,
+   "night": 30.58
+  }
+ },
+ "three_rate_avg_tl_per_kwh": {
+  "January": 4.8844,
+  "July": 4.8794,
+  "Year": 4.8819
+ },
+ "company_night_share_pct_year": {
+  "min": 28.57,
+  "min_company": "İSTANBUL ANADOLU YAKASI ELEKTRİK DAĞITIM A.Ş.",
+  "max": 31.6,
+  "max_company": "TOROSLAR ELEKTRİK DAĞITIM A.Ş."
+ },
+ "billing_days": 30,
+ "bills_tl": {
+  "4.9": {
+   "single_rate_day": 15.87,
+   "single_rate_month": 475.99,
+   "single_rate_avg_tl_per_kwh": 3.238,
+   "three_rate_day_single_rate_shape": {
+    "January": 23.93,
+    "July": 23.91,
+    "Year": 23.92
+   },
+   "three_rate_month_single_rate_shape": {
+    "January": 718.01,
+    "July": 717.27,
+    "Year": 717.64
+   },
+   "three_minus_single_month_year_shape": 241.65,
+   "three_rate_month_three_rate_customer_shape": null,
+   "break_even_night_share": {
+    "January": null,
+    "July": null,
+    "Year": null
+   }
+  },
+  "8": {
+   "single_rate_day": 25.9,
+   "single_rate_month": 777.13,
+   "single_rate_avg_tl_per_kwh": 3.238,
+   "three_rate_day_single_rate_shape": {
+    "January": 39.08,
+    "July": 39.04,
+    "Year": 39.06
+   },
+   "three_rate_month_single_rate_shape": {
+    "January": 1172.26,
+    "July": 1171.06,
+    "Year": 1171.66
+   },
+   "three_minus_single_month_year_shape": 394.53,
+   "three_rate_month_three_rate_customer_shape": null,
+   "break_even_night_share": {
+    "January": null,
+    "July": null,
+    "Year": null
+   }
+  },
+  "10": {
+   "single_rate_day": 35.62,
+   "single_rate_month": 1068.55,
+   "single_rate_avg_tl_per_kwh": 3.5618,
+   "three_rate_day_single_rate_shape": {
+    "January": 48.84,
+    "July": 48.79,
+    "Year": 48.82
+   },
+   "three_rate_month_single_rate_shape": {
+    "January": 1465.32,
+    "July": 1463.82,
+    "Year": 1464.57
+   },
+   "three_minus_single_month_year_shape": 396.02,
+   "three_rate_month_three_rate_customer_shape": null,
+   "break_even_night_share": {
+    "January": 0.8707,
+    "July": 0.871,
+    "Year": 0.871
+   }
+  },
+  "15": {
+   "single_rate_day": 59.9,
+   "single_rate_month": 1797.11,
+   "single_rate_avg_tl_per_kwh": 3.9936,
+   "three_rate_day_single_rate_shape": {
+    "January": 73.27,
+    "July": 73.19,
+    "Year": 73.23
+   },
+   "three_rate_month_single_rate_shape": {
+    "January": 2197.99,
+    "July": 2195.73,
+    "Year": 2196.86
+   },
+   "three_minus_single_month_year_shape": 399.75,
+   "three_rate_month_three_rate_customer_shape": null,
+   "break_even_night_share": {
+    "January": 0.6854,
+    "July": 0.686,
+    "Year": 0.6862
+   }
+  }
+ },
+ "bills_note": "three_rate_*_single_rate_shape: three-rate bill if the household's energy follows the national single-rate shape of that period. three_rate_month_three_rate_customer_shape is null because the EPIAS files have no separate load shape for three-rate customers.",
+ "three_rate_month_by_night_share": {
+  "40%": {
+   "4.9": 685.3,
+   "8": 1118.86,
+   "10": 1398.58,
+   "15": 2097.87
+  },
+  "50%": {
+   "4.9": 650.97,
+   "8": 1062.81,
+   "10": 1328.52,
+   "15": 1992.77
+  },
+  "60%": {
+   "4.9": 616.64,
+   "8": 1006.76,
+   "10": 1258.45,
+   "15": 1887.68
+  },
+  "70%": {
+   "4.9": 582.31,
+   "8": 950.71,
+   "10": 1188.39,
+   "15": 1782.58
+  },
+  "80%": {
+   "4.9": 547.98,
+   "8": 894.66,
+   "10": 1118.33,
+   "15": 1677.49
+  }
+ },
+ "night_scenario_note": "rest of the energy keeps the year shape's day to peak proportion",
+ "break_even_note": "Night share of daily energy above which three-rate is cheaper; the rest keeps the shape's day to peak proportion; null = never cheaper"
+}
